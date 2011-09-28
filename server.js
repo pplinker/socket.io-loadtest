@@ -1,8 +1,6 @@
 var io = require('socket.io').listen(8000);
 
-io.configure({
-	"log level":1
-});
+io.set("log level",1);
 
 var socketsCount = 0;
 var pingsCount = 0;
