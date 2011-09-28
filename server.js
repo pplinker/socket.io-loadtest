@@ -12,7 +12,7 @@ io.sockets.on('connection', function (socket) {
   var itv = setInterval(function() {
 	socket.send('ping');
 	pingsCount++;
-  },5000);
+  },1000);
 
   socket.on('disconnect',function() {
 	clearTimeout(itv);

@@ -1,7 +1,7 @@
 var io = require("socket.io-client");
 
 // On Mac, must launchctl limit maxfiles 400000 unlimited
-for (i=0;i<10000;i++) {
+for (i=0;i<5000;i++) {
 
 	var socket = io.connect('http://127.0.0.1:8000/',{'force new connection':true});
 
