@@ -12,6 +12,7 @@ io.sockets.on('connection', function (socket) {
 
   var itv = setInterval(function() {
 	socket.emit('ping');
+
 	pingsCount++;
   },1000);
 
