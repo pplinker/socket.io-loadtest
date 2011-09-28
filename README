@@ -1,0 +1,8 @@
+socket.io load test
+
+howto
+-----
+
+npm install socket.io socket.io-client
+node server.js &
+node client.js 5000
