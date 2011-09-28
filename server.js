@@ -4,6 +4,7 @@ io.set("log level",1);
 
 var socketsCount = 0;
 var pingsCount = 0;
+var pongsCount = 0;
 
 io.sockets.on('connection', function (socket) {
   
@@ -19,8 +20,12 @@ io.sockets.on('connection', function (socket) {
 	socketsCount--;
   });
 
+  socket.on('pong',function() {
+	pongsCount++;
+  });
+
 });
 
 setInterval(function() {
-	console.log(pingsCount+" pings sent over "+socketsCount+" sockets.");
+	console.log(pingsCount+" pings, "+pongsCount+" pongs over "+socketsCount+" sockets.");
 },1000);
