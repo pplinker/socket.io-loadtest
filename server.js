@@ -21,7 +21,8 @@ io.sockets.on('connection', function (socket) {
 	socketsCount--;
   });
 
-  socket.on('pong',function() {
+  socket.on('pone',function() {
+  //console.log(" server - get pong ");
 	pongsCount++;
   });
 

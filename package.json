@@ -1,0 +1,18 @@
+{
+  "name": "socket.io-loadtest",
+  "version": "1.0.1",
+  "description": "test socket",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "gendocs": "gendocs > README.md"
+  },
+  "dependencies": {
+    "socket.io": "2.0.4",
+    "socket.io-client": "2.0.4"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  }
+}
